@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.top-bar {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    position: inherit;  
+}
+
+.contact-info:hover{
+    color: black;
+}
+
+.contact1-info  a{
+    color: #fff;
+}
+
+.top-bar .contact-info, .top-bar .cta-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar button {
+    background: #fff;
+    border: none;
+    color: #ff7e5f;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.btn{
+    border-radius: 30px;
+}
+
+.btn:hover{
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    box-shadow: 0px 4px 2px -2px gray;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin: 0 10px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff7e5f;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.hero-section {
+    background: url('logo.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    position: relative;
+    font-family: 'Lucida Grande';
+
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-buttons button {
+    background: #ff7e5f;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+.hero-buttons button:hover {
+    color: black;
+}
+
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.606);
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.about-us button {
+    background: #ff7e5f;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.about-us button:hover{
+    color: black;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Segoe UI';
+}
+
+h2:hover{
+    color:#ff7e5f;
+}
+
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.service-item {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.description {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.des{
+    background: #ff7e5f;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: cursive;
+}
+
+.des:hover{
+    color: black;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-bar, .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-section {
+        height: 300px;
+    }
+
+    .hero-buttons button {
+        padding: 8px 16px;
+    }
+
+    .about-us, .services {
+        padding: 30px 10px;
+    }
+
+    .service-item {
+        margin: 10px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-bar .contact-info, .top-bar .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav ul {
+        align-items: center;
+    }
+
+    .navbar nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-section {
+        height: 200px;
+    }
+
+    .hero-buttons button {
+        padding: 6px 12px;
+    }
+
+    .about-us, .services {
+        padding: 20px 10px;
+    }
+}
